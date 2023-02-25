@@ -28,7 +28,7 @@ function Menu() {
         <MenuItem image={hamburger3} title={"Menu 3"} price={67} />
         <MenuItem image={hamburger1} title={"Menu 1"} price={99} />
         <MenuItem image={hamburger4} title={"Menu 4"} price={90} />
-        <MenuItem image={hamburger2} title={"Menu 2"} price={87 d} />
+        <MenuItem image={hamburger2} title={"Menu 2"} price={87} />
       </Grid>
     </div>
   );
