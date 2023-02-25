@@ -1,38 +1,174 @@
-.App {
-  text-align: center;
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  height: 10vh;
+  background: #000000;
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000);
+  position: sticky;
+  top: 0;
+  align-items: center;
+  z-index: 2;
+}
+.header .logo {
+  height: 100%;
+  width: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header .logo img {
+  height: 100%;
+  width: auto;
+}
+.nav {
+  display: flex;
+  gap: 15px;
+  list-style-type: none;
+}
+.nav li a {
+  text-decoration: none;
+  color: black;
+
+  background-color: #434343;
+  color: white;
+
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+.home {
+  height: 90vh;
+  background-image: url(./images/homeHamburger.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.label {
+  position: absolute;
+  left: 10%;
+  top: 40%;
+}
+.label h1 {
+  color: white;
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+.label .orderbtn {
+  color: white;
+  text-decoration: none;
+  background-color: #434343;
+  outline: none;
+  padding: 10px 40px;
+  border: transparent;
+  border-radius: 5px;
+  font-size: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.aboutImage {
+  width: 100%;
+}
+.aboutImage img {
+  height: 100%;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.aboutBottom {
+  width: 100%;
+  background: #000000;
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000);
+}
+
+.aboutLabel {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 15px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 30px 0;
+  color: lightgray;
+  width: 50%;
+  margin: 0 auto;
+}
+footer {
+  background: #000000;
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  border-top: 1px solid black;
+}
+footer .item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+footer .logos a {
+  color: #000000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.contact {
+  display: flex;
+  width: 100%;
+}
+
+.contactLeft {
+  width: 50%;
+}
+.contactLeft img {
+  width: 100%;
+  height: auto;
+}
+.contactRight {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  align-items: flex-start;
+  width: 50%;
+}
+.contactRight .form {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  align-items: flex-start;
+  margin: 0 30px;
+}
+.textfield {
+  width: 500px;
+}
+.contactRight h2 {
+  margin: 50px 30px;
+}
+
+@media (max-width: 700px) {
+  .contact {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  .contactLeft {
+    width: 100%;
+  }
+  .contactRight {
+    width: 100%;
+  }
+  .label {
+    left: 5%;
+    top: 10%;
+  }
+  .header .nav {
+    gap: 3px;
+  }
+  .contact {
+    padding-bottom: 30px;
   }
 }
